@@ -8,14 +8,52 @@
         table, th, td {
             border:1px solid black;
         }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #04AA6D;
+        }
     </style>
     <body>
-        <a href="index.html">Go back</a>
         <center>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="wcu.html">The Wrenne Claude Universe</a></li>
+                <li><a href="biblehome.html">PIUB24E</a></li>
+                <li><a href="contact.html">Contact + PGP</a></li>
+                <li><a href="https://github.com/wrenne-claude/wrenne-claude.github.com">GitHub Repo</a></li>
+            </ul>
+
             <h2>The Wrenne Claude Universe</h2>
             <hr>
             <h3>Solo projects:</h3><br>
-            <table style="width:100%">
+            <table style="width:75%">
                 <tr>
                     <th>Name</th>
                     <th>When</th>
@@ -53,7 +91,7 @@
                 </tr>
             </table><br>
             <h3>Groups:</h3><br>
-            <table style="width:100%">
+            <table style="width:75%">
                 <tr>
                     <th>Name</th>
                     <th>When</th>
