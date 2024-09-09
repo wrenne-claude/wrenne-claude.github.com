@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            wrenne claude
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Wrenne Claude</h1>
+        </div>
+
+        
+        
+        <div class="footer">
+            <p>site maintained by yours truly, Wrenne Claude. Copyright 2024</p>
+        </div>
+    </body>
+</html>
