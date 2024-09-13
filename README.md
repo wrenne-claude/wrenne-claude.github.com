@@ -10,5 +10,5 @@ I will try my best to avoid JavaScript, except for a store page (as I'd like to 
 **Some code has been and will be taken from [w3schools](https://w3schools.com)**
 ### Roadmap:
 - [ ] Newsletter signup box
-- [ ] Album gallery
-- [ ] About me + Contact pages
+- [x] Album gallery
+- [x] About me + Contact pages
