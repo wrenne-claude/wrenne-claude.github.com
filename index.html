@@ -4,37 +4,109 @@
         <title>
             wrenne claude
         </title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
+        <!-- FontAwesome integration -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <div class="header">
-            <h1>Wrenne Claude</h1>
+            <div class="typewriter">
+                <h1>Wrenne Claude</h1>
+            </div>
         </div>
 
-        <!-- Under construction text START -->
-        <style>
-            .vertical-center {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-            }
-        </style>
+        <!--Main buttons-->
+        <button type="button" class="collapsible">Who am I?</button>
+        <div class="content">
+            <p>My name is Wrenne Claude. I make music under a solo nom de plume, as well as with a band, <a href="https://batcaveproductions.bandcamp.com/album/allarme" target="_blank">Allarme</a>, where I play the electric guitar and sometimes do vocals. I also play the piano as a hobby.</p>
+            <p>I study computer science at the Polish-Japanese Academy of Information Technology in Warsaw, Poland, where I'm also currently based.</p>
+            <p>I speak Polish, English and French fairly fluently, and I'm currently learning Japanese.</p>
+        </div>
+
+        <button type="button" class="collapsible">How to contact me</button>
+        <div class="content">
+            <p>My e-mail is <code>wrenneclaude [at] proton [dot] me</code>.</p>
+            <p>You can get my PGP key <a href="wrenne_0x91973922_public.asc" download>here</a>.</p>
+            <p>You can also find me on <a href="https://discogs.com/user/wrenne">Discogs</a>, <a href="https://steamcommunity.com/id/wrenneclaude/">Steam</a>, <a href="https://www.youtube.com/@wrenne_claude">Youtube</a>, and other notable social media if you just look "Wrenne Claude" up, as I try to include that everywhere. </p>
+        </div>
+
+        <button type="button" class="collapsible">Music</button>
+        <div class="content">
+            <p>My solo music is available on <a href="https://wrenneclaude.bandcamp.com/" target="_blank">bandcamp</a> and most streaming services.</p>
+            <p>I like to describe my music as a blend of shoegaze and slowcore. I try to create interesting soundscapes and I enjoy playing in slow, mellow rhythms.</p>
+            <p>I also love cranking up both my distortion pedals in order to create deafening, roaring guitars for my tracks. When I play with <a href="https://batcaveproductions.bandcamp.com/album/allarme" target="_blank">Allarme</a>, almost 100% of the time I have at least one distortion pedal turned on.</p>
+        </div>
+
+        <button type="button" class="collapsible">What's my deal?</button>
+        <div class="content">
+            <p>I'm not that radical, but I like to stand my ground. I'm all for the libre (or more generally speaking, FLOSS) software movement. I use Nobara and Gentoo GNU/Linux daily (daily drive the former, the latter as a VM) and I'm a big hater of all things Apple and Microsoft.</p>
+            <p>Philosophy wise, I'm opposed to the idea of nihilism, and instead I dabble in existentialism. I like works that explore the absurd.</p>
+            <p>I used to be a marxist, later identifying more as an "anarcho-syndicalist", but now I don't consider myself educated enough to categorize my beliefs. I do fancy the idea of a calm and collected anarchy, or anything money-less to be frank, but I wouldn't call myself an anarchist per se.</p>
+        </div>
+
+        <button type="button" class="collapsible">What's my gear?</button>
+        <div class="content">
+            <p>My main electric guitar is a Fender Jimi Hendrix signature Stratocaster in white (with an upside-down headstock, which is a nice touch). I also have an Epiphone Les Paul Custom Pro EB.</p>
+            <p>When I record my solo music I use whatever cab sims are built into Reaper. Here is a quick reconstruction of my pedalboard that I made using <a href="https://pedalplayground.com/" target="_blank">Pedal Playground</a>.</p>
+            <img src="photos/pedalboard.png">
+        </div> <br>
+
+        <!--JavaScript for buttons-->
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            } 
+        </script>
+
+        <br>
+
+        <!-- Bandcamp embed slowslowslow -->
         <center>
-            <div class="vertical-center">
-                <h1>Page under construction</h1>
-            </div>
+            <iframe style="border: 0; width: 400px; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=2122744219/size=large/bgcol=333333/linkcol=2ebd35/artwork=small/transparent=true/" seamless><a href="https://wrenneclaude.bandcamp.com/album/slow-slow-slow">slow, slow, slow by Wrenne Claude</a></iframe>
         </center>
-        <!-- Under construction text STOP -->
 
+        <!-- Rest of the site -->
 
+        <!-- Album gallery -->
+        <div class="gallery">
+            <a href="album/slowslowslow.html">
+                <img src="photos/slow3x.jpg" width="300" height="300" alt="slow slow slow album cover">
+            </a>
+            <div class="desc">slow, slow, slow (2024)</div>
+        </div>
+
+        <div class="gallery">
+            <a href="album/allarme.html">
+                <img src="photos/allarme.jpg" width="300" height="300" alt="Allarme album cover">
+            </a>
+            <div class="desc">Allarme (2024)</div>
+        </div>
+
+        <div class="gallery">
+            <a href="album/ubiquitous.html">
+                <img src="photos/ubiquitous.jpg" width="300" height="300" alt="ubiquitous album cover">
+            </a>
+            <div class="desc">Ubiquitous (2023)</div>
+        </div>
+        
         <!-- Footer -->
         <div class="footer">
-            <p>site maintained by yours truly, Wrenne Claude. Copyright 2024</p>
+            <p>Site written and maintained by yours truly, Wrenne Claude. <a href="https://github.com/wrenne-claude/wrenne-claude.github.com" target="_blank" style="color: rgb(71, 71, 71);">Source code <i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
         </div>
+
     </body>
 </html>

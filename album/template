@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            wrenne claude
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" type="image/x-icon" href="/photos/favicon.ico">
+        <!-- FontAwesome integration -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Wrenne Claude</h1>
+        </div>
+
+        <!--Album details-->
+        <center>
+            <!--Album cover-->
+            <img src="" style="width:250px;height:auto;" alt="">
+            <!--Album title-->
+            <h1>
+                
+            </h1>
+            <!--Bandcamp link-->
+            <h4><a href="" target="_blank">bandcamp link</a></h4>
+            <!--Tracklist-->
+            <h2>Tracklist:</h2>
+            <div class="centerlist">
+                <ol class="tracklist">
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                </ol>
+            </div>
+
+            <!--Album description-->
+            <p class="albumdesc"></p>
+        </center>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Site written and maintained by yours truly, Wrenne Claude. <a href="https://github.com/wrenne-claude/wrenne-claude.github.com" target="_blank" style="color: rgb(71, 71, 71);">Source code <i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
+        </div>
+    </body>
+</html>

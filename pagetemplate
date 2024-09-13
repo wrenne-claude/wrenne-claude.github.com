@@ -5,7 +5,9 @@
             wrenne claude
         </title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
+        <!-- FontAwesome integration -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -14,9 +16,9 @@
         </div>
 
         
-        
+        <!-- Footer -->
         <div class="footer">
-            <p>site maintained by yours truly, Wrenne Claude. Copyright 2024</p>
+            <p>Site written and maintained by yours truly, Wrenne Claude. <a href="https://github.com/wrenne-claude/wrenne-claude.github.com" target="_blank" style="color: rgb(71, 71, 71);">Source code <i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
         </div>
     </body>
 </html>

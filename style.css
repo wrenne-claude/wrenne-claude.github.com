@@ -1,6 +1,8 @@
 body {
     background-color: #1a1a1a;
     color: #ffffff;
+    /* More scroll area */
+    padding-bottom: 600px;
 }
 
 .header {
@@ -11,6 +13,22 @@ body {
     font-size: 30px;
 }
 
+/* Typewriter effect in header */
+.typewriter h1 {
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation:
+        typing 3.5s steps(60, end);
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -19,4 +37,94 @@ body {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
+}
+
+/* Button */
+.collapsible {
+    background-color: #363636;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #4e4e4e;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #272727;
+    font-size: 15px;
+}
+
+/* Hyperlink colors */
+a:link {
+    color: rgb(100, 189, 100);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(23, 139, 23);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aquamarine;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellowgreen;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Album cover gallery */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #18301d;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #345c3c;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Centered list for tracklist */
+div.centerlist {
+    text-align: center;
+}
+
+ol.tracklist {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Justified album descriptions */
+p.albumdesc {
+    width: 60%;
+    text-align: justify;
+    text-align-last: center;
 }
